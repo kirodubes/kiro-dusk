@@ -57,7 +57,7 @@ run volctl                                            # PipeWire/PulseAudio volu
 if [ -f "$HOME/.fehbg" ]; then
     sh "$HOME/.fehbg" &
 else
-    feh --bg-scale ~/.config/dusk/bg/kiro-swirl.png &
+    feh --bg-scale ~/.config/dusk/bg/kiro.jpg &
 fi
 
 # ── Status bar ────────────────────────────────────────────────────────────────

@@ -1,0 +1,7 @@
+[Desktop Entry]
+Encoding=UTF-8
+Name=dusk
+Comment=dusk - a dwm fork (Kiro edition)
+Exec=/usr/bin/exec-dusk
+Icon=dusk
+Type=Application

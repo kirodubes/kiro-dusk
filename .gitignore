@@ -1,0 +1,13 @@
+.codex/
+.claude/
+
+# keybindings cheatsheets are generated on demand by kiro-keybindings — never commit
+keybindings.html
+keybindings.pdf
+
+# dusk build artifacts — the package builds in a chroot; compiled output must
+# never be committed to the source repo.
+dusk-src/config.h
+dusk-src/*.o
+dusk-src/dusk
+dusk-src/duskc

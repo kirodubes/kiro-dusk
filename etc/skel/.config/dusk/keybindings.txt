@@ -1,0 +1,74 @@
+###############################################################################
+#  KEYBINDINGS — dusk
+#  Source: etc/skel/.config/dusk/dusk.cfg (runtime libconfig — keybindings list)
+#  Generated: 2026.07.17 for /kiro-create-x11-twm — DO NOT EDIT BY HAND
+#  Note: dusk uses WORKSPACES (not tags). Workspace digits super + 1..9 use the
+#  physical number row (AZERTY: same physical keys).
+###############################################################################
+
+── 1. Applications & Launchers ───────────────────────────────────────────────
+  super + Return          alacritty (terminal)
+  super + shift + Return   alacritty (rio-drawn terminal)
+  super + d               rofi drun (app launcher)
+
+── 2. Window Management ───────────────────────────────────────────────────────
+  super + q               close focused window
+  super + z               hide / show focused window
+  super + g               toggle floating
+  super + ctrl + g        center floating window (80% of screen)
+  super + f               toggle fullscreen
+  super + shift + f       toggle fake fullscreen
+  super + n               move window to / from master (zoom)
+  super + j / k           focus next / previous window in stack
+  super + Left/Right/Up/Down   focus window in that direction
+  super + ctrl + Left/Right/Up/Down   swap places with window in that direction
+  super + ctrl + j / k    move window down / up the stack
+  super + m               mark / unmark window (for group actions)
+  super + a               mark all windows
+  super + shift + a       unmark all windows
+  super + v / shift + v   group / ungroup floating windows
+  super + b               toggle the bar
+
+── 3. Workspaces / Tags / Groups ─────────────────────────────────────────────
+  super + 1..9            view workspace 1..9
+  super + shift + 1..9    move focused window to workspace 1..9
+  super + ctrl + 1..9     send focused window to workspace 1..9 (keep it here too)
+  super + alt + 1..9      enable workspace 1..9 alongside the current one
+  super + ctrl + shift + 1..9   move all windows to workspace 1..9
+  super + 0               view all occupied workspaces on this monitor
+  super + ctrl + 0        view all workspaces on this monitor
+  super + o               view the selected workspace
+  super + comma / period  view previous / next occupied workspace
+  super + Tab             view previous / next occupied workspace
+  super + backslash       pin / unpin the current workspace
+
+── 4. Layout & Tiling ─────────────────────────────────────────────────────────
+  super + space           toggle previous layout
+  super + i / u           increase / decrease windows in the master area
+  super + ctrl + i / u    increase / decrease windows in the primary stack
+  super + h / l           shrink / grow the master area (mfact)
+  super + shift + h / l   shrink / grow the focused window (cfact)
+  super + shift + o       reset window size factor
+  super + bracketleft/right   rotate layout split / arrangement
+  super + ctrl + m        mirror layout (flip master and stack)
+  super + ctrl + shift + m    flip layout horizontal / vertical
+
+── 5. Multi-monitor ───────────────────────────────────────────────────────────
+  super + shift + comma / period   focus previous / next monitor
+  super + alt + comma / period     send window to previous / next monitor
+  super + alt + shift + comma / period   send all windows to adjacent monitor
+
+── 6. Multimedia & Hardware ───────────────────────────────────────────────────
+  (audio via the volctl tray applet; brightness via brightnessctl —
+   hardware keys are handled by the desktop, not bound in dusk.cfg)
+
+── 7. Screenshots ─────────────────────────────────────────────────────────────
+  super + shift + s       flameshot (region screenshot GUI)
+
+── 8. System & Session ────────────────────────────────────────────────────────
+  super + ctrl + s        show this keybindings cheatsheet (kiro-keybindings)
+  super + ctrl + l        lock the screen (betterlockscreen)
+  super + x               logout screen (archlinux-logout)
+  ctrl + alt + k          logout screen (archlinux-logout)
+  super + shift + q       restart dusk
+  super + ctrl + alt + q  quit dusk (exit the session)

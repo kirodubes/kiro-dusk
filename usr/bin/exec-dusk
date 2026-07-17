@@ -1,0 +1,18 @@
+#!/bin/sh
+# exec-dusk — display-manager entry point for the Kiro dusk session.
+# Seeds the per-user config from /etc/skel on first login, then hands off to
+# the session autostart script which starts the desktop and launches dusk.
+
+cd ~
+
+# First-login seed: copy the shipped config into the user's home once.
+if [ ! -d "$HOME/.config/dusk" ]; then
+    echo "Directory ~/.config/dusk does not exist. Copying from /etc/skel/.config/dusk..."
+    mkdir -p "$HOME/.config"
+    cp -r /etc/skel/.config/dusk "$HOME/.config/dusk"
+else
+    echo "Directory ~/.config/dusk already exists. Skipping copy."
+fi
+
+# Launch the session.
+exec ~/.config/dusk/scripts/run.sh

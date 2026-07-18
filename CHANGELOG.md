@@ -12,6 +12,7 @@ All notable changes to **kiro-dusk** are documented here. Dates are `YYYY.MM.DD`
 - New Super+Function-key launchers (`Super+F1..F10`): vivaldi-stable, code, inkscape, gimp, meld, vlc, virtualbox, thunar, virt-manager, spotify; `Super+F11/F12` → rofi; `Super+t` → terminal.
 - New `Ctrl+Alt` row: f=firefox, b=brave, c/g=chromium, v=vivaldi, o=opera, d=obs, e=archlinux-tweak-tool, a/q=alacritty-tweak-tool, s=fish-tweak-tool, z/w=fastfetch-tweak-tool, i=kiro-iso-builder, p=pamac-manager, m=mintstick, u=pavucontrol, r=archlinux-betterlockscreen, l=archlinux-logout --settings, t=terminal. Plus `Super+Shift+x` → edu-powermenu and `Super+Shift+Escape` → xkill.
 - **`Super+Shift+Return` rebound to thunar** (file-manager parity with ohmychadwm), overriding dusk's default rio-draw terminal on that combo.
+- **Close/restart binds adjusted:** `Super+Shift+q` now closes the focused window (killclient alias of `Super+q`); restart dusk moved from `Super+Shift+q` to `Super+Shift+r`. `Super+Ctrl+Alt+q` still quits the session.
 - Conflicts with dusk's window-manager binds routed around: `Super+v` (group) kept — pavucontrol lives on `Ctrl+Alt+u`; `Super+e` (scratchpad) kept — code lives on `Super+F2`.
 - Config validated with the libconfig parser (`config_read_file`) — parses cleanly. `keybindings.txt` cheatsheet regenerated to match.
 

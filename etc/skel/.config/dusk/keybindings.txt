@@ -41,6 +41,7 @@
 
 ── 2. Window Management ───────────────────────────────────────────────────────
   super + q               close focused window
+  super + shift + q       close focused window
   super + z               hide / show focused window
   super + g               toggle floating
   super + ctrl + g        center floating window (80% of screen)
@@ -101,5 +102,5 @@
   ctrl + alt + k          logout screen (archlinux-logout)
   ctrl + alt + l          logout settings (archlinux-logout --settings)
   super + shift + x       powermenu (edu-powermenu)
-  super + shift + q       restart dusk
+  super + shift + r       restart dusk
   super + ctrl + alt + q  quit dusk (exit the session)

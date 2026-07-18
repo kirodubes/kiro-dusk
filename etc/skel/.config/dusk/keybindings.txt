@@ -8,8 +8,36 @@
 
 ── 1. Applications & Launchers ───────────────────────────────────────────────
   super + Return          alacritty (terminal)
-  super + shift + Return   alacritty (rio-drawn terminal)
+  super + t               alacritty (terminal)
+  ctrl + alt + t          alacritty (terminal)
+  super + shift + Return  thunar (file manager)
   super + d               rofi drun (app launcher)
+  super + F11 / F12       rofi drun (app launcher)
+  super + F1              vivaldi-stable (browser)
+  super + F2              code (editor)
+  super + F3              inkscape
+  super + F4              gimp
+  super + F5              meld
+  super + F6              vlc
+  super + F7              virtualbox
+  super + F8              thunar (file manager)
+  super + F9              virt-manager
+  super + F10             spotify
+  ctrl + alt + f          firefox (browser)
+  ctrl + alt + b          brave (browser)
+  ctrl + alt + c / g      chromium (browser)
+  ctrl + alt + v          vivaldi-stable (browser)
+  ctrl + alt + o          opera (browser)
+  ctrl + alt + d          obs
+  ctrl + alt + e          archlinux-tweak-tool
+  ctrl + alt + a / q      alacritty-tweak-tool
+  ctrl + alt + s          fish-tweak-tool
+  ctrl + alt + z / w      fastfetch-tweak-tool
+  ctrl + alt + i          kiro-iso-builder
+  ctrl + alt + p          pamac-manager
+  ctrl + alt + m          mintstick (iso writer)
+  ctrl + alt + u          pavucontrol
+  super + shift + Escape  xkill
 
 ── 2. Window Management ───────────────────────────────────────────────────────
   super + q               close focused window
@@ -68,7 +96,10 @@
 ── 8. System & Session ────────────────────────────────────────────────────────
   super + ctrl + s        show this keybindings cheatsheet (kiro-keybindings)
   super + ctrl + l        lock the screen (betterlockscreen)
+  ctrl + alt + r          lock the screen (archlinux-betterlockscreen)
   super + x               logout screen (archlinux-logout)
   ctrl + alt + k          logout screen (archlinux-logout)
+  ctrl + alt + l          logout settings (archlinux-logout --settings)
+  super + shift + x       powermenu (edu-powermenu)
   super + shift + q       restart dusk
   super + ctrl + alt + q  quit dusk (exit the session)

@@ -2,6 +2,22 @@
 
 All notable changes to **kiro-dusk** are documented here. Dates are `YYYY.MM.DD`, newest first.
 
+## 2026.07.18
+
+### What Changed
+- Added application-launch keybindings to `dusk.cfg`, porting ohmychadwm's launcher set so dusk has the same app-launch muscle memory as the other Kiro editions. Previously dusk only launched alacritty, rofi and the Kiro system binds.
+
+### Technical Details
+- dusk's `spawn` resolves its argument to a **named command** (confirmed via `parse_void_reference` in `dusk-src/lib/conf.c` — a raw command string is not usable as an execv argv), so each launcher was added twice: as an entry in the `commands` list and as a `spawn` keybinding referencing it by name.
+- New Super+Function-key launchers (`Super+F1..F10`): vivaldi-stable, code, inkscape, gimp, meld, vlc, virtualbox, thunar, virt-manager, spotify; `Super+F11/F12` → rofi; `Super+t` → terminal.
+- New `Ctrl+Alt` row: f=firefox, b=brave, c/g=chromium, v=vivaldi, o=opera, d=obs, e=archlinux-tweak-tool, a/q=alacritty-tweak-tool, s=fish-tweak-tool, z/w=fastfetch-tweak-tool, i=kiro-iso-builder, p=pamac-manager, m=mintstick, u=pavucontrol, r=archlinux-betterlockscreen, l=archlinux-logout --settings, t=terminal. Plus `Super+Shift+x` → edu-powermenu and `Super+Shift+Escape` → xkill.
+- **`Super+Shift+Return` rebound to thunar** (file-manager parity with ohmychadwm), overriding dusk's default rio-draw terminal on that combo.
+- Conflicts with dusk's window-manager binds routed around: `Super+v` (group) kept — pavucontrol lives on `Ctrl+Alt+u`; `Super+e` (scratchpad) kept — code lives on `Super+F2`.
+- Config validated with the libconfig parser (`config_read_file`) — parses cleanly. `keybindings.txt` cheatsheet regenerated to match.
+
+### Files Modified
+- `etc/skel/.config/dusk/dusk.cfg`, `etc/skel/.config/dusk/keybindings.txt`
+
 ## 2026.07.17
 
 ### What Changed

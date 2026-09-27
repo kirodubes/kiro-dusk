@@ -1,7 +1,8 @@
 ###############################################################################
 #  KEYBINDINGS — dusk
 #  Source: etc/skel/.config/dusk/dusk.cfg (runtime libconfig — keybindings list)
-#  Generated: 2026.07.17 for /kiro-create-x11-twm — DO NOT EDIT BY HAND
+#  Generated: 2026.07.17
+#  Reference for the default bindings. Changed yours? Edit this file to match.
 #  Note: dusk uses WORKSPACES (not tags). Workspace digits super + 1..9 use the
 #  physical number row (AZERTY: same physical keys).
 ###############################################################################

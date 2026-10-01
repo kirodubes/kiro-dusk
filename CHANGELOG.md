@@ -2,6 +2,17 @@
 
 All notable changes to **kiro-dusk** are documented here. Dates are `YYYY.MM.DD`, newest first.
 
+## 2026.10.01
+
+### archlinux-logout-gtk4 is now archlinux-logout
+
+**What Changed.** The logout app's package and repo names carried a GTK version suffix that says nothing to users. Everything it installs was already named `archlinux-logout`, so only the package name and the references to it change.
+
+**Technical Details.** Doc pointer only. The recipe dependency changed in KIRO-PKG-BUILD-APPS.
+
+**Files Modified.**
+- `CLAUDE.md`
+
 ## 2026.09.27
 
 ### What Changed

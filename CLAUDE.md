@@ -29,7 +29,7 @@ The **dusk** edition of the Kiro X11 tiling-WM line — the first edition minted
 - **Never commit build artifacts.** `dusk-src/` is source only; `config.h`, `*.o`, and the compiled `dusk`/`duskc` are `.gitignore`d. The chroot build regenerates them.
 - **Exit-code convention is inverted vs dwm.** dusk self-restarts internally (`execvp`) and returns 0 only on a deliberate quit; `run.sh`'s loop breaks on 0 (logout) and crash-guards non-zero. Don't "fix" it to dwm's `&& continue` semantics.
 - **`duskc` + `dbus`.** `HAVE_DBUS=1` is on by default, so `duskc` ships and `dbus` is a runtime dep.
-- **Session-exit wiring.** `Super+X` / `Ctrl+Alt+K` call `archlinux-logout`, which needs a `dusk` branch in its `_get_logout()` (see Kiro-HQ command Step 5b). That lives in `archlinux-logout-gtk4`, not here.
+- **Session-exit wiring.** `Super+X` / `Ctrl+Alt+K` call `archlinux-logout`, which needs a `dusk` branch in its `_get_logout()` (see Kiro-HQ command Step 5b). That lives in `archlinux-logout`, not here.
 
 ## Build
 

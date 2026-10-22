@@ -2,6 +2,16 @@
 
 All notable changes to **kiro-dusk** are documented here. Dates are `YYYY.MM.DD`, newest first.
 
+## 2026.10.22
+
+### Power menu key calls kiro-powermenu
+
+**What Changed.** Super+Shift+X now runs `kiro-powermenu` instead of the old name `edu-powermenu`, and the keybindings cheatsheet says so. The package now depends on `kiro-powermenu`, so the menu is always installed with this desktop.
+
+**Technical Details.** Plain rename of the command. `kiro-powermenu` still ships `edu-powermenu` as a second command, so configs users already have in `~/.config` keep working.
+
+**Files Modified.** `etc/skel/.config/dusk/keybindings.txt`, `etc/skel/.config/dusk/dusk.cfg`
+
 ## 2026.10.01
 
 ### archlinux-logout-gtk4 is now archlinux-logout

@@ -102,6 +102,6 @@
   super + x               logout screen (archlinux-logout)
   ctrl + alt + k          logout screen (archlinux-logout)
   ctrl + alt + l          logout settings (archlinux-logout --settings)
-  super + shift + x       powermenu (edu-powermenu)
+  super + shift + x       powermenu (kiro-powermenu)
   super + shift + r       restart dusk
   super + ctrl + alt + q  quit dusk (exit the session)
